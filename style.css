@@ -144,9 +144,34 @@ section { padding: 80px 10%; }
 .platform-logos i { transition: 0.3s; cursor: pointer; }
 .platform-logos i:hover { color: var(--primary); transform: scale(1.2); }
 
-/* --- 8. Music & Books --- */
-.spotify-container { border-radius: 20px; overflow: hidden; border: 1px solid var(--primary); box-shadow: 0 0 30px rgba(0,255,136,0.2); }
-.book-card img { width: 100%; max-width: 180px; height: 260px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; border: 1px solid var(--border); }
+/* --- 8. Music & Books (Updated for Spotify Fix) --- */
+.spotify-container { 
+    width: 100%;
+    max-width: 100%; /* কন্টেইনারের সাথে ফিট হওয়ার জন্য */
+    border-radius: 20px; 
+    overflow: hidden; 
+    border: 1px solid var(--primary); 
+    box-shadow: 0 0 30px rgba(0,255,136,0.2); 
+    line-height: 0; /* নিচের বাড়তি গ্যাপ দূর করার জন্য */
+    background: #000; /* লোড হওয়ার সময় কালো দেখাবে */
+    margin-bottom: 30px;
+}
+
+.spotify-container iframe {
+    display: block;
+    width: 100% !important;
+    border: none;
+}
+
+.book-card img { 
+    width: 100%; 
+    max-width: 180px; 
+    height: 260px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid var(--border); 
+}
 
 /* --- 9. Organisations --- */
 .org-img-wrapper { width: 100px; height: 100px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 2px solid var(--primary); }
