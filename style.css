@@ -229,3 +229,19 @@ input:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 15px
 }
 
 footer { text-align: center; padding: 40px; border-top: 1px solid var(--border); margin-top: 50px; color: #777; }
+
+/* Spotify Fix for New Website */
+.spotify-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
+}
+
+.spotify-container iframe {
+    display: block;
+}
